@@ -1,70 +1,41 @@
-html {
-  font-family: "Impact"; 
-  margin: 1em 20%;
-  background-color: #fafafa;
+html,
+body {
+	height: 100%;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  border-bottom: 1px solid #e3e3e8;
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #222;
 }
 
-#logo {
-  float: left;
-  font-size: 3em;
-  margin: 0;
-  padding: .4em;
-  text-decoration: none;
-  color: #333;
-  border-right: 1px solid #e3e3e8;
-  transition: .5s all;
+#gsTitle {
+	position: relative;
+	color: #fff;
+	font-size: 108px;
+	font-family: "oswald", sans-serif;
+	// font-family: monospace;
 }
-
-#logo:hover {
-  color: #fafafa;
-  background-color: #333;
+.gsTitle-title {
+	margin: 0;
+	white-space: nowrap;
 }
-
-nav {
-  float: left;
+.gsTitle-color {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	margin: -.05em 0 0 .05em;
+	color: dodgerblue;
+	mix-blend-mode: darken;
+	transition: .1s;
+	transition-property: opacity, margin;
 }
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 2.2em 2em;
+.gsTitle-b {
+	margin: .05em 0 0 -.05em;
+	color: tomato;
+	mix-blend-mode: color-burn;
 }
-
-nav ul li {
-  display: inline;
-  padding: 0 .4em;
-}
-
-nav ul li a {
-  color: #333;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.6em;
-  padding-bottom: 1.3em;
-  transition: .5s color;
-}
-
-nav ul li a:hover {
-  border-bottom: 3px solid #333;
-}
-
-#active {
-  color: #ff4629;
-  border-bottom: 3px solid #333;
-}
-
-#fb:hover {
-  color: #3b5998;
-}
-
-#twitter:hover {
-  color: #00acee;
+.gsTitle-glitched .gsTitle-color {
+	opacity: .4;
 }

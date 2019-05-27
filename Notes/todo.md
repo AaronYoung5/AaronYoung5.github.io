@@ -1,4 +1,4 @@
-# Website Plan ([Link](https://www.websitebuilderexpert.com/designing-websites/))
+# Website Plan ([Didn't actually follow this link](https://www.websitebuilderexpert.com/designing-websites/))
 ## 1. Create Plan
 
 * Single page structure
