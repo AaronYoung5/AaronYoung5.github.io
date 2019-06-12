@@ -1,16 +1,596 @@
-<!DOCTYPE html5>
-<html>
+<!DOCTYPE html>
+<html lang="en" class="lang=" en"">
+
 <head>
-	<title>My Website</title>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Portfolio">
+  <meta name="author" content="Aaron">
+  <title>Aaron Young</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' type='text/css' href='style.css'>
 </head>
-<body>
-	<div id="gsTitle">
-		<div class="gsTitle-title"></div>
-		<div class="gsTitle-title gsTitle-color gsTitle-a"></div>
-		<div class="gsTitle-title gsTitle-color gsTitle-b"></div>
-	</div>
-	<script src="script.js" type="text/javascript"></script>
+
+<body id="page-top">
+  <nav class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container">
+
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top"></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#about">About</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <div class="slider-container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Hello, I am</div>
+          <div class="intro-heading"> Aaron Young </div>
+          <a href="#about" id="intro-button" class="page-scroll btn btn-default btn-xl">Tell Me More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="about" class="light-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-title">
+            <h2>About</h2>
+            <p style="margin-bottom: 10px;">I am a dedicated and driven dreamer passionate about leveraging cutting edge technology to sculpt a brighter future. <br /><br />My name is Aaron Young. I am an ambitious undergraduate student at the
+              University of
+              Wisconsin - Madison. As a Mechanical Engineering and Computer Science major, I focus on balancing a rigorous course load and an enriching extracurricular experience. At UW, I have joined three student organizations that both enhanced
+              and <b>builds upon</b> the education I received in the classroom. <br /><br />Currently, I am an active member of Wisconsin Autonomous, Engineering EXPO and Insight Wisconsin. As a board member and
+              leader of the Autonomous Controls and Electrical subgroup in <a href="#wisconsin-autonomous">Wisconsin Autonomous</a>, I have developed my leadership skills, along with becoming knowledgeable in the expanding field of autonomous
+              navigation. Additionally, I am the Industry
+              Chair for the <a href="#engineering-expo">Engineering EXPO</a>, the largest student led engineering showcase in the United States. As the Industry Chair, I am tasked with sponsor aquisition and relations. This past year, $15,000+ was
+              raised through our corporate
+              partnerships. In <a href="#insight-wisconsin">Insight Wisconsin</a>, the premier interdisciplinary organization on campus, I was involved with three separate projects. Through these projects, I have had to work with strict deadlines and
+              client requirements in an
+              interpersonal setting.<br /><br />During the 2019 summer, I developed valuable formal work experience as an undergraduate researcher for the <a href="#sbel">Simulation-Based Engineering Lab</a> (SBEL). This lab has provided me with
+              essential
+              experiences pivotal to my profesional growth. Luckily enough, the work done in SBEL parallels the development for Wisconsin Racing, allowing me to further deepen my understanding of control stack implementations and autonomous
+              vehicles.<br /><br /> In my freetime, I enjoy being active, watching sports and traveling. A long term goal I hope to accomplish by September 2020 is completing my first IronMan. As a result, I workout and go for runs often. Recently I
+              have developed an interest in cooking. In the future, I plan on living in an area where outdoor adventures are within reach; for instance, I can see myself livingwhere there are an assortment of accessible hiking options.
+              <br /><br /><b>"Dont be mad about the results you didn't get because of the work you didn't do."</b> </p>
+            <p style="margin-bottom: 10px;"> </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="row text-center">
+          <div class="mz-module-about">
+            <i class="fa fa-graduation-cap ot-circle"></i>
+            <h3>Education</h3>
+            <div class="row">
+              <div class="col-md-6 text-center">
+                <h4>University of Wisconsin - Madison | 2022</h4>
+                <h5 style="margin-top: 5px; font-weight: 700;">Mechanical Engineering | Computer Science</h5>
+                <h6 style="margin-top: 5px;">GPA: 3.96</h6>
+                <p></p>
+              </div>
+              <div class="col-md-6 text-center">
+                <h4>Verona Area High School</h4>
+                <h5 style="margin-top: 5px; font-weight: 700;">Top 10</h5>
+                <h6 style="margin-top: 5px;">GPA: 3.99</h6>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="mz-module-about">
+          <i class="fa fa-briefcase ot-circle"></i>
+          <h3>Experience</h3>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <h4 id="wisconsin-autonomous"><a href="http://vehicle.slc.engr.wisc.edu/">Wisconsin Autonomous</a></h4>
+              <h6 style="margin-top: 5px; font-weight: 700;">Autonomous Controls and Electrical Lead</h6>
+              <p>Wisconsin Autonomous is a student organization that develops a completely autonomus formula SAE vehicle for the <a href="https://www.formulastudent.de/">Forumla Student Germany</a> - Driverless competition in Germany. As Autonomous
+                Controls and Electrical subgroup leader, I must allocate responsibilities to a group of 15 undergraduate and graduate students. Additionally, I must coordinate support with sponsors and oversee development of all controls
+                elements, as well as, consult on vehicle progress. I emphasized my time on path planning algorithms and controls integration with the vehicle. As an undergraduate researcher in the <a href="#sbel">Simulation-Based Engineering Lab</a>,
+                I developed an interface between our control stack and a
+                physics simulation engine. This allowed us to test our algorithms completely independent of reality, using simulated sensory data. This was extremely pivotal in the success of our vehicle. We hope to compete in our first competition
+                in August, 2020.</p>
+
+            </div>
+            <div class="col-md-6 text-center">
+              <h4 id="sbel"><a href="https://sbel.wisc.edu/">Simulation Based Engineering Lab</a></h4>
+              <h6 style="margin-top: 5px; font-weight: 700;">Undergraduate Researcher</h6>
+              <p>The Simulation Based Engineering Lab (SBEL) at the University of Wisconsin - Madison is as forward thinking as it gets. As a major contributer to the open source physics engine named <a
+                  href="http://www.projectchrono.org/">ProjectChrono</a>, their research impacts a wide assortment of disciplines. As an undergraduate researcher, I was tasked to develop an API that interfaces the command line robotic control
+                software known as Robotic Operating System (ROS), with ProjectChrono. Through my research, I learned valuable skills, such as C++ and ROS. Additionally, I worked collaboratively with other students and gained insightful knowledge
+                about the profesional workplace. </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <h4 id="engineering-expo"><a href="https://engineeringexpo.wisc.edu/">Engineering Expo</a></h4>
+              <h6 style="margin-top: 5px; font-weight: 700;">Co-Industry Chair</h6>
+              <p>The Engineering Expo is an annual engineering showcase of companies and student projects with over 10,000 visitors. Ages of our visitors range from early elementary school students to university students to community members. As the
+                Engineering Expo Co-Industry Chair, I contacted and acquired sponsors for the event. I also coordinated the event alongside the rest of the board members. As a chair, it was important I be responsive and responsible. Through this
+                organization, I have grown as a professional, learning how to communicate effectively to peers and corporate employees. </p>
+
+            </div>
+            <div class="col-md-6 text-center">
+              <h4 id="insight-wisconsin"><a href="https://www.insightwisconsin.org/">Insight Wisconsin</a></h4>
+              <h6 style="margin-top: 5px; font-weight: 700;">Member</h6>
+              <p>As the premier interdisciplinary student organization on campus, Insight Wisconsin promoted innovative learning through collaborative team projects. As a member, I was participated in three separate groups: Timing Gate, Smart
+                Showerhead and
+                Plant Reader. In Timing Gate, I worked directly with UW Track and Field, developing a low cost and accurate timing system for their athletes. For Plant Reader, in collaboration with the UW Botany departement, I designed, proposed and
+                implemented an electronic signal reader to measure the action potentials of plants such as the <a href="https://www.youtube.com/watch?v=o5gxmV-7GhI">Mimosa Pudica</a>. In the Smart Showerhead project, of which was proposed by a fellow
+                member of Insight Wisconsin, was thought of as a way to limit water usage in the shower through Internet of Things (IoT) techniques. For all three projects, we utilized a variety of microcontrollers and designed housings using CAD
+                software.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="mz-module-about">
+        <i class="fa fa-lightbulb-o ot-circle"></i>
+        <h3>Skills</h3>
+        <div class="col-md-3 text-center">
+          <h4>Coding Languages</h4>
+          <table align="center" class="skill">
+            <tr>
+              <th scope="row"><span>Java</span></th>
+              <td>
+                <ul class="dots" data-percent="4"></ul>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Python</span></th>
+              <td>
+                <ul class="dots" data-percent="3"></ul>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Matlab</span></th>
+              <td>
+                <ul class="dots" data-percent="3"></ul>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span>C++</span></th>
+              <td>
+                <ul class="dots" data-percent="2"></ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-3 text-center">
+          <h4>CAD Software</h4>
+          <table align="center" class="skill">
+            <tr>
+              <th scope="row"><span>Fusion 360</span></th>
+              <td>
+                <ul class="dots" data-percent="3"></ul>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Autodesk Inventor</span></th>
+              <td>
+                <ul class="dots" data-percent="3"></ul>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Solidworks</span></th>
+              <td>
+                <ul class="dots" data-percent="2"></ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-3 text-center">
+          <h4>Computers</h4>
+          <table align="center" class="skill">
+            <tr>
+              <th scope="row"><span>Linux</span></th>
+              <td>
+                <ul class="dots" data-percent="3"></ul>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span>ROS</span></th>
+              <td>
+                <ul class="dots" data-percent="3"></ul>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Arduino</span></th>
+              <td>
+                <ul class="dots" data-percent="3"></ul>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+        <div class="col-md-3 text-center">
+          <h4>Machinery</h4>
+          <table align="center" class="skill">
+            <tr>
+              <th scope="row"><span>Lathe</span></th>
+              <td>
+                <ul class="dots" data-percent="1"></ul>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Mill</span></th>
+              <td>
+                <ul class="dots" data-percent="1"></ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="mz-module-about">
+        <a href="files/AaronYoungResume.pdf" download>
+          <button type="submit" class="btn-xl" style="margin-top: 50px; margin-bottom: -50px;"><i class="fa fa-download"></i> Download Resume</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio" class="light-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>This contains all my notable projects. Click on the item to view more information.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="ot-portfolio-item">
+            <div class="parent">
+              <figure class="effect-bubba">
+                <img src="portfolio/PathPlanning/image.jpg" alt="Porfolio-1" class="img-responsive">
+                <figcaption>
+                  <h2>PATH PLANNING</h2>
+                  <p>Matlab, Optimization</p>
+                  <a href="#" data-toggle="modal" data-target="#Modal-1">View more</a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="ot-portfolio-item">
+            <div class="parent">
+              <figure class="effect-bubba">
+                <img src="portfolio/ChronoROS/image.jpg" alt="Porfolio-1" class="img-responsive portfolio-img">
+                <figcaption>
+                  <h2>ChROS</h2>
+                  <p>C++, ROS, Open Source</p>
+                  <a href="#" data-toggle="modal" data-target="#Modal-1">View more</a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- <div class="col-md-4">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="https://farm8.staticflickr.com/7440/26842629781_bf838a3f3c_o_d.jpg" alt="Porfolio-2" class="img-responsive">
+              <figcaption>
+                <h2>PLACEHOLDER</h2>
+                <p>Branding, Design</p>
+                <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="https://farm8.staticflickr.com/7440/26842629781_bf838a3f3c_o_d.jpg" alt="Porfolio-3" class="img-responsive">
+              <figcaption>
+                <h2>PLACEHOLDER</h2>
+                <p>Branding, Design</p>
+                <a href="#" data-toggle="modal" data-target="#Modal-3">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="https://farm8.staticflickr.com/7440/26842629781_bf838a3f3c_o_d.jpg" alt="Porfolio-4" class="img-responsive">
+              <figcaption>
+                <h2>PLACEHOLDER</h2>
+                <p>Branding, Design</p>
+                <a href="#" data-toggle="modal" data-target="#Modal-4">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="https://farm8.staticflickr.com/7440/26842629781_bf838a3f3c_o_d.jpg" alt="Porfolio-5" class="img-responsive">
+              <figcaption>
+                <h2>PLACEHOLDER</h2>
+                <p>Branding, Design</p>
+                <a href="#" data-toggle="modal" data-target="#Modal-5">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="ot-portfolio-item">
+            <figure class="effect-bubba">
+              <img src="https://farm8.staticflickr.com/7440/26842629781_bf838a3f3c_o_d.jpg" alt="Porfolio-6" class="img-responsive">
+              <figcaption>
+                <h2>PLACEHOLDER</h2>
+                <p>Branding, Design</p>
+                <a href="#" data-toggle="modal" data-target="#Modal-6">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </div> -->
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-title contact-me">
+            <h2>Contact Me</h2>
+            <p style="margin-bottom: 10px;">Please Contact Me Through The Following Form:</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <form name="sentMessage" id="contactForm" method="post" action="mail.php" role="form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name *" id="name" required="required" data-error="Your name is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your Email *" id="email" required="required" data-error="Valid email is required.">
+                <div class="help-block with-errors"></div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Your Message *" id="message" required="required" data-error="Please provide a message"></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div id="success"></div>
+              <button type="submit" class="btn btn-send">Send Message</button>
+            </div>
+          </div>
+        </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+          <h3>Posted your message successfully!</h3>
+        </div>
+        <div id="error_message" style="width:100%; height:100%; display:none; ">
+          <h3>Error</h3>
+          Sorry there was an error sending your form.
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <p id="back-top">
+    <a href="#page-top"><i class="fa fa-angle-up"></i></a>
+  </p>
+  <footer>
+    <div class="container text-center">
+      <div class="row">
+        <!-- <p>Designed by <span>Floyd</span><span>Kots</span></p> -->
+        <div class="social-btn">
+          <a class="btn btn-social btn-twitter" href="https://twitter.com/aarony3131?lang=en">
+            <span class="fa fa-twitter fa-3x"></span>
+          </a>
+          <a class="btn btn-social btn-facebook" href="https://www.facebook.com/profile.php?id=100007142418318" target='_blank'>
+            <span class="fa fa-facebook fa-3x"></span>
+          </a>
+          <a class="btn btn-social btn-github" href="https://github.com/AaronYoung5" target='_blank'>
+            <span class="fa fa-github fa-3x"></span>
+          </a>
+          <a class="btn btn-social btn-linkedin" href="https://www.linkedin.com/in/aaronryoung5" target="_blank">
+            <span class="fa fa-linkedin fa-3x"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="Modal-lable-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="Modal-label-1">Path Planning</h4>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/0Zd9BlOQLCc"></iframe>
+          </div>
+          <div class="modal-works"><span>Matlab</span><span>Optimization</span></div>
+          <p>This project was in conjunction with Wisconsin Autonomous. The task was to develop a path planning controller for our autonomous vehicle. The requirements were as follows: take an input of inner and outer bounds of a track and either
+            develop a path that is subsequently followed or using a control loop, continuously optimize a an optimal path. The latter is the implementation chosen for the vehicle and what the above video demonstrates. This technique is known as Model
+            Predictive Control (MPC) and utilizes optimization. Initalially written using Matlab, the final product will be C++.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Visit Page</button>
+          <button type="button" class="btn btn-danger btn-cancel" data-dismiss="modal"><a href="#">Close</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal-2" tabindex="-1" role="dialog" aria-labelledby="Modal-lable-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="Modal-label-2">ChROS</h4>
+        </div>
+        <div class="modal-body">
+          <img src="https://farm8.staticflickr.com/7258/26305974003_2c97336cbe_o_d.jpg" alt="Modal-2" class="img-responsive" />
+          <div class="modal-works"><span>C++</span><span>ROS</span><span>OpenSource</span><span>ProjectChrono</span></div>
+          <p>This project was in conjunction with the Simulation-Based Engineering Lab (SBEL). The primary research focus is in the OpenSource project called ProjectChrono. ProjectChrono is a hyper-realistic physics engine. It has an API for vehicle
+            dynamics called Chrono::Vehicle. My task was to use this template and implement an interface that would allow for control of the vehicle through ROS. It could then be used for autonomous navigation, as sensor data could be created in the
+            same form as it would in reality. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Visit Page</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><a href="#">Close</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal-3" tabindex="-1" role="dialog" aria-labelledby="Modal-lable-3">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="Modal-label-3">PLACEHOLDER</h4>
+        </div>
+        <div class="modal-body">
+          <img src="https://farm8.staticflickr.com/7258/26305974003_2c97336cbe_o_d.jpg" alt="Modal-3" class="img-responsive" />
+          <div class="modal-works"><span>Branding</span><span>Web Design</span></div>
+          <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Visit Page</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><a href="#">Close</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal-4" tabindex="-1" role="dialog" aria-labelledby="Modal-lable-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="Modal-label-4">PLACEHOLDER</h4>
+        </div>
+        <div class="modal-body">
+          <img src="https://farm8.staticflickr.com/7258/26305974003_2c97336cbe_o_d.jpg" alt="Modal-4" class="img-responsive" />
+          <div class="modal-works"><span>Branding</span><span>Web Design</span></div>
+          <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https:://www.google.com">
+            <button type="button" class="btn btn-primary">Visit Page</button>
+          </a>
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><a href="#">Close</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal-5" tabindex="-1" role="dialog" aria-labelledby="Modal-lable-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="Modal-label-5">PLACEHOLDER</h4>
+        </div>
+        <div class="modal-body">
+          <img src="https://farm8.staticflickr.com/7258/26305974003_2c97336cbe_o_d.jpg" alt="Modal-5" class="img-responsive" />
+          <div class="modal-works"><span>Branding</span><span>Web Design</span></div>
+          <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Visit Page</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><a href="#">Close</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal-6" tabindex="-1" role="dialog" aria-labelledby="Modal-lable-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="Modal-label-6">PLACEHOLDER</h4>
+        </div>
+        <div class="modal-body">
+          <img src="https://farm8.staticflickr.com/7258/26305974003_2c97336cbe_o_d.jpg" alt="Modal-6" class="img-responsive" />
+          <div class="modal-works"><span>Branding</span><span>Web Design</span></div>
+          <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Visit Page</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><a href="#">Close</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+  <script src="script.js"></script>
+
 </body>
+
 </html>
