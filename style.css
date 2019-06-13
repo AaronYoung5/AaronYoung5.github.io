@@ -44,7 +44,8 @@ a, a:hover, a:focus, a:active, a.active {
 
 ::selection {
   text-shadow: none;
-  background: #d56d53;
+  background: #e29a88;
+  color: white;
 }
 
 @media (min-width: 768px) {

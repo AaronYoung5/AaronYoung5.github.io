@@ -64,21 +64,26 @@
           <div class="section-title">
             <h2>About</h2>
             <p style="margin-bottom: 10px;">I am a dedicated and driven dreamer passionate about leveraging cutting edge technology to sculpt a brighter future. <br /><br />My name is Aaron Young. I am an ambitious undergraduate student at the
-              University of
-              Wisconsin - Madison. As a Mechanical Engineering and Computer Science major, I focus on balancing a rigorous course load and an enriching extracurricular experience. At UW, I have joined three student organizations that both enhanced
-              and <b>builds upon</b> the education I received in the classroom. <br /><br />Currently, I am an active member of Wisconsin Autonomous, Engineering EXPO, and Insight Wisconsin. As a board member and
-              leader of the Autonomous Controls and Electrical subgroup in <a href="#wisconsin-autonomous">Wisconsin Autonomous</a>, I have developed my leadership skills, along with becoming knowledgeable in the expanding field of autonomous
-              navigation. Additionally, I am the Industry
-              Chair for the <a href="#engineering-expo">Engineering EXPO</a>, the largest student-led engineering showcase in the United States. As the Industry Chair, I am tasked with sponsor acquisition and relations. This past year, $15,000+ was
-              raised through our corporate
-              partnerships. In <a href="#insight-wisconsin">Insight Wisconsin</a>, the premier interdisciplinary organization on campus, I was involved with three separate projects. Through these projects, I have had to work with strict deadlines and
-              client requirements in an
-              interpersonal setting.<br /><br />During the 2019 summer, I developed valuable formal work experience as an undergraduate researcher for the <a href="#sbel">Simulation-Based Engineering Lab</a> (SBEL). This lab has provided me with
-              essential
-              experiences pivotal to my professional growth. Luckily enough, the work done in SBEL parallels the development for Wisconsin Racing, allowing me to further deepen my understanding of control stack implementations and autonomous
-              vehicles.<br /><br /> In my free time, I enjoy being active, watching sports and traveling. A long term goal I hope to accomplish by September 2020 is completing my first IronMan. As a result, I workout and go for runs often. Recently I
-              have developed an interest in cooking. In the future, I plan on living in an area where outdoor adventures are within reach; for instance, I can see myself living where there is an assortment of accessible hiking options.
-              <br /><br /><b>"Don't be mad about the results you didn't get because of the work you didn't do."</b> </p>
+              University of Wisconsin - Madison. As a Mechanical Engineering and Computer Science major, I focus on balancing a rigorous course load with an enriching extracurricular experience. At UW, I have joined three student organizations that
+              augment the education I receive in the classroom. <br /><br /> Currently, I am an active member of Wisconsin Autonomous, Engineering EXPO, and Insight Wisconsin. As a board member and leader of the Autonomous Controls and Electrical
+              subgroup in <a href="#wisconsin-autonomous">Wisconsin Autonomous</a>, I have developed my leadership skills, along with becoming knowledgeable in the expanding field of autonomous navigation. Additionally, I am the Industry Chair for
+              the <a href="#engineering-expo">Engineering EXPO</a>, the largest student-led engineering showcase in the United States. As the Industry Chair, I am tasked with sponsor acquisition and relations. This past year, $15,000+ was raised
+              through our corporate partnerships. In <a href="#insight-wisconsin">Insight Wisconsin</a>, the premier interdisciplinary organization on campus, I was involved with three separate projects. Through these projects, I have had to work
+              with strict deadlines and unique client requirements in an interpersonal setting.
+
+              <br /><br />
+
+              During the 2019 summer, I developed valuable formal work experiences as an undergraduate researcher for the <a href="#sbel">Simulation-Based Engineering Lab</a> (SBEL). This lab has provided me with essential experiences pivotal to my
+              professional growth. Fortunately, the work done in SBEL parallels the development for Wisconsin Racing, allowing me to further deepen my understanding of control stack implementations and autonomous vehicles.
+
+              <br /><br />
+
+              In my free time, I enjoy being active by participating in a variety of sports, traveling and spending time with family. A long term goal I hope to accomplish by September 2020 is completing my first Ironman. As a result, I workout and
+              go for runs often. Recently I have developed an interest in cooking. In the future, I plan on living in an area where outdoor adventures are within reach; for instance, I can see myself living where there is an assortment of accessible
+              hiking and outdoor activity options.
+              <br /><br />
+
+              <b>"Don't be mad about the results you didn't get because of the work you didn't do."</b> </p>
             <p style="margin-bottom: 10px;"> </p>
           </div>
         </div>
@@ -385,22 +390,22 @@
         <div class="col-lg-12 text-center">
           <div class="section-title contact-me">
             <h2>Contact Me</h2>
-            <p style="margin-bottom: 10px;">Please Contact Me Through The Following Form:</p>
+            <!-- <p style="margin-bottom: 10px;">Please Contact Me Through The Following Form:</p> -->
           </div>
         </div>
       </div>
       <div class="col-lg-12">
-        <form name="sentMessage" id="contactForm" method="post" action="mail.php" role="form">
+        <!-- <form name="email" id="contactForm" method="post" action="http://formspree.io/aarony3131@gmail.com">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name *" id="name" required="required" data-error="Your name is required.">
+                <input type="text" class="form-control" placeholder="Your Name *" id="name" required="required" data-error="Your name is required." name="name">
                 <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Your Email *" id="email" required="required" data-error="Valid email is required.">
+                <input type="email" class="form-control" placeholder="Your Email *" id="email" required="required" data-error="Valid email is required." name="email">
                 <div class="help-block with-errors"></div>
 
               </div>
@@ -409,7 +414,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
-                <textarea class="form-control" placeholder="Your Message *" id="message" required="required" data-error="Please provide a message"></textarea>
+                <textarea class="form-control" placeholder="Your Message *" id="message" required="required" data-error="Please provide a message" name="message"></textarea>
                 <div class="help-block with-errors"></div>
               </div>
             </div>
@@ -418,17 +423,24 @@
           <div class="row">
             <div class="col-lg-12 text-center">
               <div id="success"></div>
-              <button type="submit" class="btn btn-send">Send Message</button>
+              <button type="submit" class="btn" type="submit">Send Message</button>
             </div>
           </div>
+        </form> -->
+
+        <!-- <form method="POST" action="https://formspree.io/aarony3131@gmail.com">
+          <input type="text" name="name" class="form-control" placeholder="Your Name *" required="required" data-error="Your name is required.">
+          <textarea name="message" placeholder="Test Message"></textarea>
+          <button type="submit">Send Test</button>
         </form>
         <div id="success_message" style="width:100%; height:100%; display:none; ">
           <h3>Posted your message successfully!</h3>
         </div>
         <div id="error_message" style="width:100%; height:100%; display:none; ">
           <h3>Error</h3>
-          Sorry there was an error sending your form.
-
+          Sorry there was an error sending your form. -->
+        <div class="row text-center">
+          <a id="form-button" href="mailto:aarony3131@gmail.com" class="btn btn-default btn-xl" style="margin:25px">Email Me</a>
         </div>
       </div>
     </div>
@@ -453,6 +465,7 @@
           <a class="btn btn-social btn-linkedin" href="https://www.linkedin.com/in/aaronryoung5" target="_blank">
             <span class="fa fa-linkedin fa-3x"></span>
           </a>
+          <p>Aaron Young <span>|</span> Last updated on <span>06</span>-<span>12</span>-<span>19</span></p>
         </div>
       </div>
     </div>
