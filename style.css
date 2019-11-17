@@ -152,7 +152,7 @@ section {
 3. Header
 --------------------*/
 header {
-  background: url('imgs/landscape.jpg');
+  background: url('home/landscape.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -232,7 +232,7 @@ header .intro-text .intro-heading {
   font-size: 15px;
   font-weight: 300;
   line-height: 25px;
-  margin: 20px 100px 60px 100px;
+  margin: 20px 10px 60px 10px;
 }
 
 /*--------------------
@@ -252,6 +252,7 @@ header .intro-text .intro-heading {
   font-weight: 300;
   line-height: 22px;
   color: #969696;
+  margin: 20px 10px 60px 10px;
 }
 
 .ot-circle {
@@ -654,6 +655,7 @@ footer p a span {
   height: 10px;
   overflow: hidden;
 }
+
 .dots li {
   float: left;
   list-style: none;
@@ -663,6 +665,7 @@ footer p a span {
   width: 10px;
   margin: 0 10px 0 0;
 }
+
 .dots li.active {
   background: #204c72;
 }
@@ -670,6 +673,7 @@ footer p a span {
 .language {
   margin-bottom: 30px;
 }
+
 .language ul li span {
   width: 50px;
   display: inline-block;
