@@ -62,8 +62,10 @@
   </header>
   <section id="about" class="light-bg">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-24 text-center">
+      <div class="row centered">
+        <div class=col-lg-2>
+        </div>
+        <div class="col-lg-8 text-center">
           <div class="section-title">
             <h2>About</h2>
             <p style="margin-bottom: 10px;">I am a dedicated and driven dreamer passionate about levergaing cutting edge technology to sculpt a brighter future. <br /><br />My name is Aaron Young. I am an ambitious undergraduate student at the
@@ -91,6 +93,8 @@
             <p style="margin-bottom: 10px;"> </p>
           </div>
         </div>
+          <div class=col-lg-2>
+          </div>
       </div>
       <div class="col-lg-12">
         <div class="row text-center">
@@ -98,16 +102,10 @@
             <i class="fa fa-graduation-cap ot-circle"></i>
             <h3>Education</h3>
             <div class="row">
-              <div class="col-md-6 text-center">
-                <h4>University of Wisconsin - Madison | 2022</h4>
+              <div class="col-md-12 text-center">
+                <h4>University of Wisconsin - Madison | <i>Expected 2022</i></h4>
                 <h5 style="margin-top: 5px; font-weight: 700;">Mechanical Engineering | Computer Science</h5>
-                <h6 style="margin-top: 5px;">GPA: 3.96</h6>
-                <p></p>
-              </div>
-              <div class="col-md-6 text-center">
-                <h4>Verona Area High School</h4>
-                <h5 style="margin-top: 5px; font-weight: 700;">Top 10</h5>
-                <h6 style="margin-top: 5px;">GPA: 3.99</h6>
+                <h6 style="margin-top: 5px;">GPA: 3.90</h6>
                 <p></p>
               </div>
             </div>
@@ -122,22 +120,18 @@
           <div class="row">
             <div class="col-md-6 text-center">
               <h4 id="wisconsin-autonomous"><a href="http://vehicle.slc.engr.wisc.edu/">Wisconsin Autonomous</a></h4>
-              <h6 style="margin-top: 5px; font-weight: 700;">Autonomous Controls and Electrical Lead</h6>
-              <p>Wisconsin Autonomous is a student organization that develops a completely autonomus formula SAE vehicle for the <a href="https://www.formulastudent.de/">Forumla Student Germany</a> - Driverless competition in Germany. As Autonomous
-                Controls and Electrical subgroup leader, I must allocate responsibilities to a group of 15 undergraduate and graduate students. Additionally, I must coordinate support with sponsors and oversee development of all controls
-                elements, as well as, consult on vehicle progress. I emphasized my time on path planning algorithms and controls integration with the vehicle. As an undergraduate researcher in the <a href="#sbel">Simulation-Based Engineering Lab</a>,
-                I developed an interface between our control stack and a
-                physics simulation engine. This allowed us to test our algorithms completely independent of reality, using simulated sensory data. This was extremely pivotal in the success of our vehicle. We hope to compete in our first competition
-                in August, 2020.</p>
+              <h6 style="margin-top: 5px; font-weight: 700;">President</h6>
+              <p>
+                Wisconsin Autonomous (WA) is a student lead organization focused on furthering the development and research of autonomous vehicles on the UW campus. At the time of writing, WA is working to compete in two international level competitions: the <a href="https://www.indyautonomouschallenge.com/">Indy Autonomous Challange</a> and the <a href="https://www.indyautonomouschallenge.com/">evGrand Prix</a>. As the President, I lead a group of 30 undergraduate students, allocating responsibilities and supporting continued development. I oversee the development of all control elements and consult on vehicle progress. I also coordinate support for sponsors and facilitate outreach. Most of my time was spent integrating path planning and controls based algorithms within our Indy Autonomous Challenge control stack. As an undergraduate researcher in the <a href="#sbel">Simulation-Based Engineering Lab</a>, I created a bridge between a physics based simulation engine and our autonomous framework. This allowed our members to test the algorithms independent of physical hardware. Using simulated sensor data and the popular robotics open source software known as Robot Operating System (ROS), we successsfully and accurately demonstrated our implemented policies prior to testing on the full scale vehicle. Similarly, I designed and created an autonomous scale vehicle to be used as a test bed for control strategies. These test platforms were pivotal in the success of our team and faciliated considerable progress for our team members.
+              </p>
 
             </div>
             <div class="col-md-6 text-center">
               <h4 id="sbel"><a href="https://sbel.wisc.edu/">Simulation Based Engineering Lab</a></h4>
               <h6 style="margin-top: 5px; font-weight: 700;">Undergraduate Researcher</h6>
-              <p>The Simulation Based Engineering Lab (SBEL) at the University of Wisconsin - Madison is as forward thinking as it gets. As a major contributer to the open source physics engine named <a
-                  href="http://www.projectchrono.org/">ProjectChrono</a>, their research impacts a wide assortment of disciplines. As an undergraduate researcher, I was tasked to develop an API that interfaces the command line robotic control
-                software known as Robotic Operating System (ROS), with ProjectChrono. Through my research, I learned valuable skills, such as C++ and ROS. Additionally, I worked collaboratively with other students and gained insightful knowledge
-                about the professional workplace. </p>
+              <p>
+                The <a href="https://sbel.wisc.edu/">Simulation Based Engineering Laboratory</a> (SBEL) is a lab focused on solving complex, real-world problems with the aid of simulation. Located in the Mechanical Engineering Building at UW, SBEL is well established and has countless publications and conference submissions around the world. As a major contributer to the open source physics engine named <a href="http://www.projectchrono.org/">ProjectChrono</a>, their research impacts a wide assortment of disciplines. As an undergraduate researcher, I first began by developing an API that bridges the popular robotics open source software known as Robot Operating System (ROS) with ProjectChrono. I then began work on a scalable, multi-agent simulation framework for autonomous vehicles known as SynChrono. Utilizing SynChrono and the Python port of ProjectChrono called <a href="https://projectchrono.org/pychrono/">PyChrono</a>, I aided in the implementation of various control strategies to pilot a vehicle through rugged, off-road environments. Reinforcement learning was used extensively as a means to create an <i>end-to-end</i> control policy. Through my research, I learned inexpensible skills, such as C++, ROS and strong technical writing skills. I worked collaboratively with other graduate and undergraduate students, gaining insightful knowledge about the professional workplace. The challenging nature of SBEL provided motivation and allowed me to grow as a leader and a student.
+              </p>
             </div>
           </div>
           <div class="row">
@@ -168,13 +162,20 @@
       <div class="mz-module-about">
         <i class="fa fa-lightbulb-o ot-circle"></i>
         <h3>Skills</h3>
-        <div class="col-md-3 text-center">
-          <h4>Coding Languages</h4>
+        <div class="col-md-3"></div>
+        <div class="col-md-2 text-center">
+          <h4>Programming Languages</h4>
           <table align="center" class="skill">
             <tr>
               <th scope="row"><span>C++</span></th>
               <td>
                 <ul class="dots" data-percent="4"></ul>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><span>C</span></th>
+              <td>
+                <ul class="dots" data-percent="3"></ul>
               </td>
             </tr>
             <tr>
@@ -197,7 +198,7 @@
             </tr>
           </table>
         </div>
-        <div class="col-md-3 text-center">
+        <div class="col-md-2 text-center">
           <h4>CAD Software</h4>
           <table align="center" class="skill">
             <tr>
@@ -220,7 +221,7 @@
             </tr>
           </table>
         </div>
-        <div class="col-md-3 text-center">
+        <div class="col-md-2 text-center">
           <h4>Computers</h4>
           <table align="center" class="skill">
             <tr>
@@ -242,25 +243,8 @@
               </td>
             </tr>
           </table>
-
         </div>
-        <div class="col-md-3 text-center">
-          <h4>Machinery</h4>
-          <table align="center" class="skill">
-            <tr>
-              <th scope="row"><span>Lathe</span></th>
-              <td>
-                <ul class="dots" data-percent="1"></ul>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row"><span>Mill</span></th>
-              <td>
-                <ul class="dots" data-percent="1"></ul>
-              </td>
-            </tr>
-          </table>
-        </div>
+        <div class="col-md-3"></div>
       </div>
     </div>
     <div class="row text-center">
@@ -410,7 +394,7 @@
           <a class="btn btn-social btn-linkedin" href="https://www.linkedin.com/in/aaronryoung5" target="_blank">
             <span class="fa fa-linkedin fa-3x"></span>
           </a>
-          <p>Aaron Young <span>|</span> Last updated on <span>11</span>-<span>16</span>-<span>19</span></p>
+          <p>Aaron Young <span>|</span> Last updated on <span>6</span>-<span>27</span>-<span>20</span></p>
         </div>
       </div>
     </div>
