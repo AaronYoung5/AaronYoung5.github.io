@@ -420,10 +420,12 @@
         </div>
         <div class="modal-body">
           <img src="portfolio/ros_interface/sidebyside_perception.png" alt="Modal-2" class="img-responsive" />
-          <div class="modal-works"><span>C++</span><span>ROS</span><span>OpenSource</span><span>ProjectChrono</span><span>Autonomous Vehicles</span></div>
-          <p>This project was in conjunction with the Simulation-Based Engineering Lab (SBEL). Utilizing ProjectChrono, a highly dynamic physics engine, I created an API that allowed users
-            to interface the simulation environment with Robot Operating System (ROS). The primary focus of this project was to provide support for control's capabilities of the
-            simulated vehicles with in the Chrono::Vehicle module. A secondary goal of the project was to determine how accurate the simulation needed to be to successfully produce a transferable result. </p>
+          <div class="modal-works"><span>C++</span><span>ROS</span><span>Open Source</span><span>ProjectChrono</span><span>Autonomous Vehicles</span></div>
+          <p>
+            This project was in conjunction with the Simulation-Based Engineering Lab (SBEL). Utilizing ProjectChrono, a highly dynamic physics engine, I created an API that allowed users
+            to interface the simulation environment with Robot Operating System (ROS). The primary focus of this project was to provide support for testing control policies of the
+            simulated vehicles within the Chrono::Vehicle module. A <i>drag-and-drop</i> interface could then be utilized, where the control stack used in reality was identical to that in the simulation. A secondary goal of the project was to validate the accuracy of the simulation using a scale vehicle, of which was controled by ROS.
+          </p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary">Visit Page</button>
@@ -438,20 +440,20 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="Modal-label-2">Autonomous RC Car</h4>
+          <h4 class="modal-title" id="Modal-label-2">Autonomous Scale Vehicle</h4>
         </div>
         <div class="modal-body">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe src="https://www.youtube.com/embed/JvSR3P9g7RA" allowfullscreen></iframe>
           </div>
           <div class="modal-works"><span>Autonomous Vehicles</span><span>ROS</span><span>OpenSource</span><span>Mechatronics</span></div>
-          <p>This project was initially faciliated by the Simulation-Based Engineering Lab (SBEL) and was continued to be developed throughout the fall semseter of 2019.
-            The initial focus of this project was to create a platform for validating simulation through a phsyical video, e.g. an algorithm initially created in simulation
-            would is then tested on the RC Car to validate the accuracy of simulation for autonomous vehicle development. For Wiscosnin Autonomous, further development has been
-            made to provide a quality testing platform for team members to test algorithms related to the competition.</p>
+          <p>
+            This project was initially faciliated by the Simulation-Based Engineering Lab (SBEL) and continued development was made by Wisconsin Autonomous (WA).
+            The initial focus of this project was to create a platform for validating simulation performance through a phsyical test bed. For the <a href="https://sbel.wisc.edu/magic/">Machine-Ground Interaction Consortium</a>, a poster was submitted that demonstrated the use of this scale vehicle. As seen in the video, a ZED stereo camera was used for sensing, of which was simulated in the Chrono environment and a control policy was derived from that same environment. The submission was awarded the third place prize. I then replicated the same vehicle to be used for WA to provide a quality testing platform for team members to test algorithms related to the Indy Autonomous Challenge and the evGrand Prix.
+          </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Visit Page</button>
+          <!-- <button type="button" class="btn btn-primary">Visit Page</button> -->
           <button type="button" class="btn btn-danger btn-cancel" data-dismiss="modal"><a href="#">Close</a></button>
         </div>
       </div>
@@ -467,15 +469,13 @@
         </div>
         <div class="modal-body">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://www.youtube.com/embed/veWpRZrtaek"></iframe>
+            <iframe src="https://youtube.com/embed/FY-hD6RgHSw"></iframe>
           </div>
           <div class="modal-works"><span>Autonomous Vehicles</span><span>Machine Learning</span><span>ProjectChrono</span></div>
-          <p> This project was initially proposed within the Simulation-Based Engineering Lab (SBEL). The goal of the project
-            was to develop controls algorithms for autonomous vehicles. Using the Vehicle module within ProjectChrono, a highly dynamic simulation environment,
-            a multi-vehicle scenario was created and a nueral net using TensorFlow was trained to control said vehicle. Initially, a PPO was utilized and a simple
-            reward function and environment was used: the vehicle was rewarded for how close it got to a certain location while remaining close to a specified
-            path and the states were simply the vehicles velocity, position and path coordinates. The process slowly became more complicated, implementing
-            simulated sensors, such as camera's, LiDAR's and gps/imu's. </p>
+          <p>
+            This project was initially proposed within the Simulation-Based Engineering Lab (SBEL). The goal of the project
+            was to develop controls algorithms for autonomous vehicles. Using the <a href="http://api.projectchrono.org/group__vehicle.html">Chrono::Vehicle</a> and <a href="https://projectchrono.org/pychrono/">PyChrono</a> modules within ProjectChrono, an <a href="https://gym.openai.com/">OpenAI Gym</a> environment was constructed to train a HMMWV vehicle to follow in the tracks of leader vehicle. This goal of this demonstration was to showcase the potential of the Chrono::Vehicle and PyChrono framework as a means to creating <i>end-to-end</i> control policies. Using SynChrono, a multi-agent framework built on top of Chrono, a fully simulated off-road convoy scenario was deployed with varying numbers of RL followers and varying types of terrains. The video shows a scenario where the last three vehicles use the reinforcement learned policy and the leader vehicle uses a PID path follower. The terrain is deformable SCM with parameters that reflect snow like conditions.
+          </p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary">Visit Page</button>

@@ -9,6 +9,8 @@
 body {
   margin: 0px;
   font-family: "Open Sans", Sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
@@ -348,9 +350,8 @@ figure.effect-bubba figcaption::after {
 
 figure.effect-bubba h2 {
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
-  text-transform: uppercase;
   padding-top: 30%;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -485,7 +486,6 @@ footer p a span {
 }
 
 .modal-title {
-  text-transform: uppercase;
   font-size: 23px;
 }
 
@@ -511,6 +511,9 @@ footer p a span {
   background-color: #FED136;
   margin-right: 15px;
   padding: 5px 10px;
+  display: inline-block;
+  margin-bottom: 2.5px;
+  margin-top: 2.5px;
 }
 
 /*--------------------
