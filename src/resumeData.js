@@ -76,28 +76,87 @@ let resumeData = {
       YearOfStarting: "2020",
       MonthOfLeaving: "Nov",
       YearOfLeaving: "2020",
-      description:
-        "Located in their Munich offices. Original internship was acquired with Autonomous Intelligent Driving GmbH, of which has now merged with Argo AI.\n\nThis internship would have begun May 2020 and completed December 2020 (6 month co-op). I went through the entire interview process and the internship was subsequently cancelled after multiple delays.\n\nThe position would have been under the Driving Functions team to develop and deploy controls algorithms for autonomous vehicles in urban settings.",
+      description: "<em>Located in their Munich offices.</em>",
       Achievements: "NOTE: CANCELLED DUE TO COVID19",
     },
   ],
   skillsDescription: "",
-  skills: [
+  skillLists: [
     {
-      skillname: "C++",
-      score: 4,
+      skills: [
+        {
+          skillname: "C/C++",
+          score: 5,
+        },
+        {
+          skillname: "Python",
+          score: 5,
+        },
+        {
+          skillname: "JavaScript",
+          score: 3,
+        },
+        {
+          skillname: "Java",
+          score: 3,
+        },
+      ],
     },
     {
-      skillname: "Python",
-      score: 3,
+      skills: [
+        {
+          skillname: "Linux",
+          score: 4,
+        },
+        {
+          skillname: "ROS/ROS2",
+          score: 5,
+        },
+        {
+          skillname: "Arduino",
+          score: 4,
+        },
+        {
+          skillname: "IoT",
+          score: 4,
+        },
+      ],
     },
     {
-      skillname: "SolidWorks",
-      score: 2,
+      skills: [
+        {
+          skillname: "SolidWorks",
+          score: 4,
+        },
+        {
+          skillname: "Fusion 360",
+          score: 3,
+        },
+        {
+          skillname: "AutoDesk Inventor",
+          score: 3,
+        },
+      ],
     },
     {
-      skillname: "Linux",
-      score: 3,
+      skills: [
+        {
+          skillname: "Lathe",
+          score: 3,
+        },
+        {
+          skillname: "Mill",
+          score: 3,
+        },
+        {
+          skillname: "Oscilliscope",
+          score: 4,
+        },
+        {
+          skillname: "CNC Mill",
+          score: 4,
+        },
+      ],
     },
   ],
   portfolio: [

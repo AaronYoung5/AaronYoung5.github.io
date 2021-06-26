@@ -401,13 +401,13 @@ ul#nav li.current a {
 }
 
 .bars li em {
-    font: 15px 'opensans-bold', sans-serif;
+    font: 0.75vw 'opensans-bold', sans-serif;
     color: #313131;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: normal;
     position: relative;
-    top: -36px;
+    top: -25px;
 }
 
 .bar-expand {

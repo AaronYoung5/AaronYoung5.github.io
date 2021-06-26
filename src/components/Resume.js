@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import ReactHtmlParser from "react-html-parser";
 
 const Resume = ({ resumeData }) => {
@@ -80,7 +80,9 @@ const Resume = ({ resumeData }) => {
                         </em>
                       )}
                     </p>
-                    <p style={{ whiteSpace: "pre-wrap" }}>{item.description}</p>
+                    <p style={{ whiteSpace: "pre-wrap" }}>
+                      {ReactHtmlParser(item.description)}
+                    </p>
                     <p>{item.Achievements}</p>
                   </div>
                 </Row>
@@ -101,17 +103,33 @@ const Resume = ({ resumeData }) => {
 
           <div className="bars">
             <ul className="skills">
-              {resumeData.skills &&
-                resumeData.skills.map((item) => {
+              {resumeData.skillLists &&
+                resumeData.skillLists.map((itemList) => {
                   return (
-                    <li key={item.skillname}>
-                      <span
-                        className={`bar-expand bar-animate bar-${item.score}`}
-                      />
-                      <em>{item.skillname}</em>
-                    </li>
+                    <Row>
+                      {itemList.skills &&
+                        itemList.skills.map((item) => {
+                          return (
+                            <Col>
+                              <li
+                                style={{
+                                  display: "inline-block",
+                                  width: "100%",
+                                }}
+                                key={item.skillname}
+                              >
+                                <span
+                                  className={`bar-expand bar-animate bar-${item.score}`}
+                                />
+                                <em>{item.skillname}</em>
+                              </li>
+                            </Col>
+                          );
+                        })}
+                    </Row>
                   );
                 })}
+              )}
             </ul>
           </div>
         </div>
