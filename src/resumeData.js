@@ -67,7 +67,7 @@ let resumeData = {
       MonthOfLeaving: "May",
       YearOfLeaving: "2021",
       description:
-        "- Working in the DARTS Lab, which focuses on the development and deployment of a simulation infrastructure to be used to model environments and test algorithms for space exploration\n- Working with a ray tracing graphics engine (OptiX) to model sensors for use in the various simulators\n- Deployed the created package, titled Inter-planetary renderer for imaging and sensing (IRIS), in the ROAMS (Rover Analysis, Modeling and Simulation) and DSENDS (Dynamics Simulator for Entry, Descent and Surface landing) Simulators\n- Contracted by ANRE Technologies",
+        "- Worked in the DARTS Lab, which focused on the development of a simulation infrastructure to be used to test algorithms for terrestrial and space robots\n- Designed and implemented a real-time, physics based sensor modeling pipeline built on top of the OptiX ray tracing engine\n- Collaborated with other JPL teams, including Small Bodies and Terrain Relative Navigation",
     },
     {
       CompanyName: "Argo AI",
