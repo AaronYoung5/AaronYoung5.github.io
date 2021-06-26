@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from "react";
+import { Container, Row } from "react-bootstrap";
 
-const ContactUs = ({ resumeData }) => {
+const ContactMe = ({ resumeData }) => {
   return (
     <Container fluid id="contact" className="m-auto">
       <Row className="m-auto">
@@ -12,7 +12,7 @@ const ContactUs = ({ resumeData }) => {
           id="form-button"
           href="mailto:aarony3131@gmail.com"
           className="mx-auto button button-default button-xl"
-          style={{ "margin-top": "25px" }}
+          style={{ marginTop: "25px" }}
         >
           Email Me
         </a>
@@ -21,4 +21,4 @@ const ContactUs = ({ resumeData }) => {
   );
 };
 
-export default ContactUs;
+export default ContactMe;

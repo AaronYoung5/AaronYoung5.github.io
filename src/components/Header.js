@@ -1,9 +1,9 @@
 import React from "react";
-import { Container, Navbar, Nav, Row } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
 const Header = ({ resumeData }) => {
   return (
-    <React.Fragment>
+    <>
       <header id="home">
         <Navbar id="nav-wrap">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -47,7 +47,7 @@ const Header = ({ resumeData }) => {
                 resumeData.socialLinks.map((item) => {
                   return (
                     <li key={item.name}>
-                      <a href={item.url} target="_blank">
+                      <a href={item.url} target="_blank" rel="noreferrer">
                         <i className={item.className} />
                       </a>
                     </li>
@@ -63,7 +63,7 @@ const Header = ({ resumeData }) => {
           </a>
         </p>
       </header>
-    </React.Fragment>
+    </>
   );
 };
 

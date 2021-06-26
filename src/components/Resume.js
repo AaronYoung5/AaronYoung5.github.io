@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Container, Row } from "react-bootstrap";
 import ReactHtmlParser from "react-html-parser";
 
@@ -16,7 +16,7 @@ const Resume = ({ resumeData }) => {
           {resumeData.education &&
             resumeData.education.map((item) => {
               return (
-                <Row className="item">
+                <Row className="item" key={item.UniversityName}>
                   <div className="twelve columns">
                     <h3>{item.UniversityName}</h3>
                     <p className="info">
@@ -61,9 +61,9 @@ const Resume = ({ resumeData }) => {
 
         <div className="nine columns main-col">
           {resumeData.work &&
-            resumeData.work.map((item) => {
+            resumeData.work.map((item, index) => {
               return (
-                <Row className="item">
+                <Row className="item" key={item.CompanyName}>
                   <div className="twelve columns">
                     <h3>{item.CompanyName}</h3>
                     <p className="info">
@@ -104,7 +104,7 @@ const Resume = ({ resumeData }) => {
               {resumeData.skills &&
                 resumeData.skills.map((item) => {
                   return (
-                    <li>
+                    <li key={item.skillname}>
                       <span
                         className={`bar-expand bar-animate bar-${item.score}`}
                       />

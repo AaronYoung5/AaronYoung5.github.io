@@ -3,18 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = ({ resumeData }) => {
   return (
-    <Container
-      fluid
-      as="footer"
-      style={{ "margin-bottom": 20, "padding-top": 35 }}
-    >
+    <Container fluid as="footer" style={{ marginBottom: 0, paddingTop: 35 }}>
       <Row className="m-auto">
         <Col className="m-auto">
           <ul className="social-links">
             {resumeData.socialLinks &&
               resumeData.socialLinks.map((item) => {
                 return (
-                  <li>
+                  <li key={item.url}>
                     <a href={item.url}>
                       <i className={item.className} />
                     </a>

@@ -73,20 +73,15 @@ const Portfolio = ({ resumeData }) => {
               {resumeData.portfolio &&
                 resumeData.portfolio.map((item, index) => {
                   return (
-                    <Col md={3} style={{ padding: "20px 0px" }}>
-                      <a
+                    <Col key={item.name} md={3} style={{ padding: "20px 0px" }}>
+                      <i
                         style={{ cursor: "pointer" }}
                         onClick={() => {
                           setModalShow(true);
                           setIndex(index);
                         }}
                       >
-                        <Card
-                          className="portfolio-item"
-                          key={index}
-                          bg="dark"
-                          text="light"
-                        >
+                        <Card className="portfolio-item" bg="dark" text="light">
                           <Card.Img variant="top" src={item.imgurl} />
                           <Card.Body>
                             <Card.Title>{item.name}</Card.Title>
@@ -98,7 +93,7 @@ const Portfolio = ({ resumeData }) => {
                             </small>
                           </Card.Footer>
                         </Card>
-                      </a>
+                      </i>
                     </Col>
                   );
                 })}

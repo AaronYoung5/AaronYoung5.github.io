@@ -4,20 +4,20 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
-import ContactUs from "./components/ContactUs";
+import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 import resumeData from "./resumeData";
 
 const App = () => {
   return (
-    <React.Fragment className="App">
+    <>
       <Header resumeData={resumeData} />
       <About resumeData={resumeData} />
       <Resume resumeData={resumeData} />
       <Portfolio resumeData={resumeData} />
-      <ContactUs resumeData={resumeData} />
+      <ContactMe resumeData={resumeData} />
       <Footer resumeData={resumeData} />
-    </React.Fragment>
+    </>
   );
 };
 
