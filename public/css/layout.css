@@ -401,7 +401,7 @@ ul#nav li.current a {
 }
 
 .bars li em {
-    font: 0.75vw 'opensans-bold', sans-serif;
+    font: 1.5em 'opensans-bold', sans-serif;
     color: #313131;
     text-transform: uppercase;
     letter-spacing: 2px;

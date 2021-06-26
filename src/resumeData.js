@@ -83,6 +83,7 @@ let resumeData = {
   skillsDescription: "",
   skillLists: [
     {
+      name: "CS Languages",
       skills: [
         {
           skillname: "C/C++",
@@ -103,6 +104,7 @@ let resumeData = {
       ],
     },
     {
+      name: "General CS Stuff",
       skills: [
         {
           skillname: "Linux",
@@ -123,6 +125,7 @@ let resumeData = {
       ],
     },
     {
+      name: "CAD",
       skills: [
         {
           skillname: "SolidWorks",
@@ -139,6 +142,7 @@ let resumeData = {
       ],
     },
     {
+      name: "Equipment",
       skills: [
         {
           skillname: "Lathe",

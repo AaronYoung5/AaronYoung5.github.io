@@ -106,11 +106,11 @@ const Resume = ({ resumeData }) => {
               {resumeData.skillLists &&
                 resumeData.skillLists.map((itemList) => {
                   return (
-                    <Row>
+                    <Row key={itemList.name}>
                       {itemList.skills &&
                         itemList.skills.map((item) => {
                           return (
-                            <Col>
+                            <Col key={item.skillname}>
                               <li
                                 style={{
                                   display: "inline-block",
