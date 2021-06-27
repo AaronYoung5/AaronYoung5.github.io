@@ -11,6 +11,7 @@ import {
 } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import ReactHtmlParser from "react-html-parser";
+import TimeAgo from "react-timeago";
 
 function ModalMedia({ type, content, ...props }) {
   if (type === "image") {
@@ -89,7 +90,7 @@ const Portfolio = ({ resumeData }) => {
                           </Card.Body>
                           <Card.Footer>
                             <small className="text-muted">
-                              Last updated 3 mins ago
+                              Last updated <TimeAgo date={item.update_date} />
                             </small>
                           </Card.Footer>
                         </Card>
@@ -111,17 +112,3 @@ const Portfolio = ({ resumeData }) => {
 };
 
 export default Portfolio;
-
-// <div className="columns portfolio-item">
-//   <div className="item-wrap">
-//     <a href="#modal-01">
-//       <img src="images/profile.jpg" className="item-img" />
-//       <div className="overlay">
-//         <div className="portfolio-item-meta">
-//           <h5>{item.name}</h5>
-//           <p>{item.description}</p>
-//         </div>
-//       </div>
-//     </a>
-//   </div>
-// </div>

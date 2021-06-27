@@ -23,6 +23,8 @@ const About = ({ resumeData }) => {
             <div className="columns contact-details">
               <h2>Contact Details</h2>
               <span>
+                <b>Email:</b> {resumeData.email}
+                <br />
                 <b>Phone:</b> {resumeData.phone}
                 <br />
                 <b>Address:</b> {resumeData.address}

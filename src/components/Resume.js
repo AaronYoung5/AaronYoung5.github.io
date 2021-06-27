@@ -91,7 +91,7 @@ const Resume = ({ resumeData }) => {
         </div>
       </Row>
 
-      <Row className="skill">
+      <Row className="skill" style={{ marginBottom: "-75px" }}>
         <div className="three columns header-col">
           <h1>
             <span>Skills</span>
@@ -129,7 +129,6 @@ const Resume = ({ resumeData }) => {
                     </Row>
                   );
                 })}
-              )}
             </ul>
           </div>
         </div>
