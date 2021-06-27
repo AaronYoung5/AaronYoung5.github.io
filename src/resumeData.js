@@ -2,7 +2,7 @@ let resumeData = {
   imagebaseurl: "https://AaronYoung5.github.io/",
   name: "Aaron Young",
   role: "Mechanical and Software Engineer",
-  email: "aryoung5@wisc.edu",
+  email: "aaronryoung6@gmail.com",
   roleDescription:
     "I am an ambitious undergraduate student at the University of Wisconsin - Madison. As a Mechanical Engineering and Computer Science major, I focus on balancing a rigorous course load with an enriching extracurricular experience. At UW-Madison, I have joined three student organizations that augment the education I receive in the classroom.",
   socialLinks: [
