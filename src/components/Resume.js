@@ -91,6 +91,44 @@ const Resume = ({ resumeData }) => {
         </div>
       </Row>
 
+      <Row className="publications">
+        <div className="three columns header-col">
+          <h1>
+            <span>Publications</span>
+          </h1>
+        </div>
+        <div className="nine columns main-col">
+          {resumeData.publications &&
+            resumeData.publications.map((item) => {
+              return (
+                <div style={{ marginBottom: "30px" }}>
+                  <h3
+                    style={{
+                      lineHeight: "normal",
+                      textTransform: "none",
+                      letterSpacing: "normal",
+                      fontSize: "medium",
+                    }}
+                  >
+                    {item.title}
+                  </h3>
+                  <p>{item.citation}</p>
+                  <p>
+                    <em
+                      style={{
+                        lineHeight: "0.25",
+                        fontSize: "small",
+                      }}
+                    >
+                      {item.place}, {item.year}
+                    </em>
+                  </p>
+                </div>
+              );
+            })}
+        </div>
+      </Row>
+
       <Row className="skill" style={{ marginBottom: "-75px" }}>
         <div className="three columns header-col">
           <h1>

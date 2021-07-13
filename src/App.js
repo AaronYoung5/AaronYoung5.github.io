@@ -6,6 +6,7 @@ import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
+
 import resumeData from "./resumeData";
 
 const App = () => {

@@ -81,6 +81,50 @@ let resumeData = {
       Achievements: "NOTE: CANCELLED DUE TO COVID19",
     },
   ],
+  publications: [
+    // {
+    // 	title: "End-to-end Learned Autonomous Off-Road Navigation using a Physics-Based Simulation Framework."
+    //   citation:
+    //     "Elmquist, A., Benatti, S., Young, A., Tasora, A., Serban, R., & Negrut, D. (2020). End-to-end Learned Autonomous Off-Road Navigation using a Physics-Based Simulation Framework.",
+    // 	place: "Co-Authored paper submitted for review at the 2020 Conference on Robot Learning (CoRL)."
+    // },
+    {
+      title:
+        "Enabling Artificial Intelligence Studies in Off-Road Mobility Through Physics-Based Simulation of Multi-Agent Scenarios.",
+      citation:
+        "Negrut, D., Serban, R., Elmquist, A., Taves, J., Young, A., Tasora, A., & Benatti, S. (2020). Enabling Artificial Intelligence Studies in Off-Road Mobility Through Physics-Based Simulation of Multi-Agent Scenarios.",
+      place:
+        "NDIA Ground Vehicle Systems Engineering and Technology Symposium (GVSETS)",
+      year: "2020",
+    },
+    {
+      title:
+        "Synchrono: A Scalable, Physics-Based Simulation Platform for Testing Groups of Autonomous Vehicles And/or Robots.",
+      citation:
+        "Taves, J., Elmquist, A., Young, A., Serban, R., & Negrut, D. (2020). Synchrono: A Scalable, Physics-Based Simulation Platform for Testing Groups of Autonomous Vehicles And/or Robots.",
+      place:
+        "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      year: "2020",
+    },
+    {
+      title:
+        "Synchrono: A Scalable, Physics-Based Simulation Platform for Testing Groups of Autonomous Vehicles And/or Robots.",
+      citation:
+        "Taves, J., Elmquist, A., Young, A., Serban, R., & Negrut, D. (2020). Synchrono: A Scalable, Physics-Based Simulation Platform for Testing Groups of Autonomous Vehicles And/or Robots.",
+      place:
+        "International Design Engineering Technical Conferences & Computers and Information in Engineering Conference (IDETC-CIE)",
+      year: "2020",
+    },
+    {
+      title:
+        "Enabling Artificial Intelligence Studies in Off-Road Mobility Through Physics-Based Simulation of Multi-Agent Scenarios",
+      citation:
+        "Young, A., Benatti, S., Taves, J., Elmquist, A., Serban, R., Negrut, D., Tasora, A. (2021). Enabling Artificial Intelligence Studies in Off-Road Mobility Through Physics-Based Simulation of Multi-Agent Scenarios.",
+      place:
+        "17th International Conference on Multibody Systems, Nonlinear Dynamics, and Control (MSNDC)",
+      year: "2021",
+    },
+  ],
   skillsDescription: "",
   skillLists: [
     {

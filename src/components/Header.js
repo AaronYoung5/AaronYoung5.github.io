@@ -30,6 +30,11 @@ const Header = ({ resumeData }) => {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item as="li">
+                <Nav.Link as="a" href="#publications" className="smoothscroll">
+                  Publications
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item as="li">
                 <Nav.Link as="a" href="#contact" className="smoothscroll">
                   Contact
                 </Nav.Link>
