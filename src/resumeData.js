@@ -181,7 +181,7 @@ let resumeData = {
           score: 3,
         },
         {
-          skillname: "AutoDesk Inventor",
+          skillname: "Inventor",
           score: 3,
         },
       ],

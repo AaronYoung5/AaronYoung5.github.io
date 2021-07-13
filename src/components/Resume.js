@@ -101,7 +101,10 @@ const Resume = ({ resumeData }) => {
           {resumeData.publications &&
             resumeData.publications.map((item) => {
               return (
-                <div style={{ marginBottom: "30px" }}>
+                <div
+                  key={item.title + item.citation + item.place}
+                  style={{ marginBottom: "30px" }}
+                >
                   <h3
                     style={{
                       lineHeight: "normal",

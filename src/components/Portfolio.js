@@ -17,7 +17,15 @@ function ModalMedia({ type, content, ...props }) {
   if (type === "image") {
     return <Image src={content} {...props} />;
   } else if (type === "video") {
-    return <ReactPlayer url={content} {...props} />;
+    return (
+      <ReactPlayer
+        className="player-wrapper"
+        playing
+        width="100%"
+        url={content}
+        {...props}
+      />
+    );
   }
   return <></>;
 }
@@ -33,7 +41,7 @@ function MyVerticallyCenteredModal({ data, ...props }) {
       <Modal.Header closeButton>
         <Modal.Title
           id="contained-modal-title-vcenter"
-          style={{ "font-size": "24px" }}
+          style={{ fontSize: "24px" }}
         >
           {data.name}
         </Modal.Title>
@@ -44,7 +52,7 @@ function MyVerticallyCenteredModal({ data, ...props }) {
             type={data.media.type}
             content={data.media.content}
             className="mx-auto"
-            style={{ "padding-bottom": "10px" }}
+            style={{ paddingBottom: "10px" }}
           />
         )}
         <p id="modal-body">{ReactHtmlParser(data.description)}</p>
