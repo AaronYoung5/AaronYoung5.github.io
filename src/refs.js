@@ -1,4 +1,4 @@
-%------------------- 2023 --------------------
+const refs = `%------------------- 2023 --------------------
 %---------------- Presentations --------------
 @misc{ECCOMAS:art-sim:2023,
     author = {Thomas Hansen and Shouvik Chatterjee and Sriram Ashokkumar and Ishaan Mahajan and Harry Zhang and Stefan Caldararu and Abhiraj Dashora and Aaron Young and He Shen and Luning Fang and Radu Serban and Dan Negrut},
@@ -20,7 +20,7 @@
     author          = {Aaron Young},
     title           = {{Autonomy Research Testbed and a Simulation Toolkit}},
     year            = {2022},
-    howpublished    = {\url{https://go.wisc.edu/cm6ju0}},
+    howpublished    = {\\url{https://go.wisc.edu/cm6ju0}},
     note = {{Computing in Engineering Forum, Machine-Ground Consortium}},
 }
 
@@ -99,7 +99,7 @@
     author          = {Aaron Young},
     title           = {{Overview of Wisconsin Autonomous project, a team effort undertaken by the UW-Madison undergraduate students}},
     year            = {2021},
-    howpublished    = {\url{https://go.wisc.edu/cm6ju0}},
+    howpublished    = {\\url{https://go.wisc.edu/cm6ju0}},
     note = {{Computing in Engineering Forum, Machine-Ground Consortium}},
 }
 
@@ -107,7 +107,7 @@
     author          = {Aaron Young and Jay Taves and Asher Elmquist and Radu Serban and Dan Negrut and Alessandro Tasora},
     title           = {{Enabling Artificial Intelligence Studies in Off-Road Mobility Through Physics-Based Simulation of Multi-Agent Scenarios}},
     year            = {2021},
-    howpublished    = {\url{https://go.wisc.edu/e0lcr7}},
+    howpublished    = {\\url{https://go.wisc.edu/e0lcr7}},
     note            = {{International Conference on Multibody Systems, Nonlinear Dynamics, and Control}}
 }
 
@@ -147,7 +147,7 @@
     title           = {{SynChrono: An MPI-Based, Scalable Physics-Based Simulation Framework for Autonomous Vehicles Operating in Off-Road Conditions}},
     year            = {2020},
     booktitle       = {{ACM/IEEE Supercomputing Conference}},
-    howpublished    = {\url{https://sc20.supercomputing.org/proceedings/tech\_poster/poster\_files/rpost135s2-file2.pdf}}
+    howpublished    = {\\url{https://sc20.supercomputing.org/proceedings/tech\_poster/poster\_files/rpost135s2-file2.pdf}}
 }
 
 @unpublished{MAGiC:Poster:2020,
@@ -172,4 +172,6 @@
     title   = {{Developing Control Strategies for a 1/6th Scale Autonomous Vehicle using Simulation in Chrono}},
     year    = {2019},
     note = {{Computing in Engineering Forum, Machine-Ground Consortium}}
-}
+}`
+
+export default refs

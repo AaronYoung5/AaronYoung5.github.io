@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   CardDeck,
@@ -8,103 +8,103 @@ import {
   Modal,
   Button,
   Image,
-} from "react-bootstrap";
-import ReactPlayer from "react-player";
-import ReactHtmlParser from "react-html-parser";
-import TimeAgo from "react-timeago";
+} from 'react-bootstrap'
+import ReactPlayer from 'react-player'
+import parse from 'html-react-parser'
+import TimeAgo from 'react-timeago'
 
 function ModalMedia({ type, content, ...props }) {
-  if (type === "image") {
-    return <Image src={content} {...props} />;
-  } else if (type === "video") {
+  if (type === 'image') {
+    return <Image src={content} {...props} />
+  } else if (type === 'video') {
     return (
       <ReactPlayer
-        className="player-wrapper"
+        className='player-wrapper'
         playing
-        width="100%"
+        width='100%'
         url={content}
         {...props}
       />
-    );
+    )
   }
-  return <></>;
+  return <></>
 }
 
 function MyVerticallyCenteredModal({ data, ...props }) {
   return (
     <Modal
       {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
+      size='lg'
+      aria-labelledby='contained-modal-title-vcenter'
       centered
     >
       <Modal.Header closeButton>
         <Modal.Title
-          id="contained-modal-title-vcenter"
-          style={{ fontSize: "24px" }}
+          id='contained-modal-title-vcenter'
+          style={{ fontSize: '24px' }}
         >
           {data.name}
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body className="mx-auto">
+      <Modal.Body className='mx-auto'>
         {data.media && (
           <ModalMedia
             type={data.media.type}
             content={data.media.content}
-            className="mx-auto"
-            style={{ paddingBottom: "10px" }}
+            className='mx-auto'
+            style={{ paddingBottom: '10px' }}
           />
         )}
-        <p id="modal-body">{ReactHtmlParser(data.description)}</p>
+        <p id='modal-body'>{parse(data.description)}</p>
         <h5>{data.keywords}</h5>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
-  );
+  )
 }
 
 const Portfolio = ({ resumeData }) => {
-  const [modalShow, setModalShow] = React.useState(false);
-  const [currentIndex, setIndex] = React.useState(0);
+  const [modalShow, setModalShow] = React.useState(false)
+  const [currentIndex, setIndex] = React.useState(0)
 
   return (
-    <Container fluid id="portfolio">
-      <Row className="m-auto">
-        <Col className="m-auto" style={{ padding: "-10px 0px" }}>
+    <Container fluid id='portfolio'>
+      <Row className='m-auto'>
+        <Col className='m-auto' style={{ padding: '-10px 0px' }}>
           <h1>Portfolio</h1>
           <div
-            id="portfolio-wrapper"
-            className="bgrid-quarters s-bgrid-thirds cf"
+            id='portfolio-wrapper'
+            className='bgrid-quarters s-bgrid-thirds cf'
           >
             <CardDeck>
               {resumeData.portfolio &&
                 resumeData.portfolio.map((item, index) => {
                   return (
-                    <Col key={item.name} md={3} style={{ padding: "20px 0px" }}>
+                    <Col key={item.name} md={3} style={{ padding: '20px 0px' }}>
                       <i
-                        style={{ cursor: "pointer" }}
+                        style={{ cursor: 'pointer' }}
                         onClick={() => {
-                          setModalShow(true);
-                          setIndex(index);
+                          setModalShow(true)
+                          setIndex(index)
                         }}
                       >
-                        <Card className="portfolio-item" bg="dark" text="light">
-                          <Card.Img variant="top" src={item.imgurl} />
+                        <Card className='portfolio-item' bg='dark' text='light'>
+                          <Card.Img variant='top' src={item.imgurl} />
                           <Card.Body>
                             <Card.Title>{item.name}</Card.Title>
                             <Card.Text>{item.keywords}</Card.Text>
                           </Card.Body>
                           <Card.Footer>
-                            <small className="text-muted">
+                            <small className='text-muted'>
                               Last updated <TimeAgo date={item.update_date} />
                             </small>
                           </Card.Footer>
                         </Card>
                       </i>
                     </Col>
-                  );
+                  )
                 })}
             </CardDeck>
           </div>
@@ -116,7 +116,7 @@ const Portfolio = ({ resumeData }) => {
         onHide={() => setModalShow(false)}
       />
     </Container>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio
